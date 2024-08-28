@@ -5,11 +5,20 @@ nav {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    .message-style {
+        flex-direction: column;
+    }
+}
+
 .logo-icon {
     background-size: cover;
-    height: 48px;
-    width: 46px;
-    background-image: (logo.jpg);
+    height: 70px;
+    width: 70px;
+    background-image: url(../logo.jpg);
     border-radius: 50%;
 }
 
