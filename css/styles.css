@@ -5,12 +5,27 @@ nav {
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+
+    .logo-icon {
+        margin-bottom: 10px
+    }
+
     nav {
         flex-direction: column;
     }
+
+    .nav-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
     .message-style {
         flex-direction: column;
+    }
+
+    .form {
+        margin-bottom: 20px
     }
 }
 
@@ -18,7 +33,7 @@ nav {
     background-size: cover;
     height: 70px;
     width: 70px;
-    background-image: url(../logo.jpg);
+    background-image: url(../assets/logo.jpg);
     border-radius: 50%;
 }
 
@@ -37,11 +52,20 @@ nav {
 }
 
 .banner-img {
-    height: 300px;
-    background-image: url(https://picsum.photos/300);
+    height: 350px;
     background-size: cover;
     background-position: center;
 }
+.img-1{
+    background-image: url(../assets/img-1.jpg);
+}
+.img-2 {
+    background-image: url(../assets/img-2.jpg);
+}
+.img-3 {
+    background-image: url(../assets/img-3.jpg);
+}
+
 .profile-item {
     height: 100px;
     text-align: -webkit-center;

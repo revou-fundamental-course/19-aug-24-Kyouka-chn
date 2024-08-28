@@ -17,49 +17,52 @@
 
         <section class="nav-container">
             <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Our Profile</a>
+            <a href="#op" class="nav-item">Our Profile</a>
             <a href="#" class="nav-item">Achievements</a>
-            <a href="#" class="nav-item">Message Us</a>
+            <a href="#msg-us" class="nav-item">Message Us</a>
         </section>
     </nav>
 
     <hr />
 
     <main>
-                <article>
+        <article>
             <header>
                 <h1>Hi <span id="nama">Acum</span> Welcome To Our Website</h1>
                 <p>Uji coba mini Project</p>
-                <script src="js\script.js"></script>
+                
             </header>
 
             
+            <div class="banner-img img-1"> </div>
+            <div class="banner-img img-2"> </div>
+            <div class="banner-img img-3"> </div>
             
-
-            <div class="banner-img"> </div>
+           
+            <script src="js\script.js"></script>
         </article>
 
         <hr />
 
         <section>
-            <header>
-                <h1>Our Profiles</h1>
+            <header id="op">
+                <h1>Our Profile</h1>
             </header>
 
             <section class="profile-container">
                 <div class="profile-item">
                     <div class="profile-img"></div>
-                    <h2>Mini Project</h2>
+                    <h3>Mini Project</h3>
                 </div>
 
                 <div class="profile-item">
                     <div class="profile-img"></div>
-                    <h2>Mini Project</h2>
+                    <h3>Mini Project</h3>
                 </div>
 
                 <div class="profile-item">
                     <div class="profile-img"></div>
-                    <h2>Mini Project</h2>
+                    <h3>Mini Project</h3>
                 </div>
             </section>
         </section>
@@ -67,13 +70,12 @@
         <hr />
         
         <section>
-            <header>
+            <header id="msg-us">
                 <h1>Message Us</h1>
             </header>
-        </section>
-        
-        <section class="message-style">
-            <form name="message-form" onsubmit="return validateForm()">
+                
+            <section class="message-style">
+            <form class="form" name="message-form" onsubmit="return validateForm()">
              <table>
               <tr>
               <td width="100">Nama</td> 
@@ -112,6 +114,7 @@
                 <p>Jenis Kelamin: <span id="sender-gender"></span></p>
                 <p>Pesan: <span id="sender-messages"></span></p>
             </div>
+            </section>
         </section>
     </main>
 

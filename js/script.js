@@ -26,3 +26,24 @@ function setSenderUi(name, birthDate, gender, messages) {
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-messages").innerHTML = messages;
 }
+
+var indexSlide = 1;
+showDivs(indexSlide);
+
+function plusDivs(n) {
+    showDivs((indexSlide += n));
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("banner-img");
+    if (n > x.length) {indexSlide = 1}
+    else if (n < 1) {indexSlide = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[indexSlide-1].style.display = "block";
+}
+setInterval(() => {
+    plusDivs(1);
+}, 2000);
