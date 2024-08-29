@@ -1,9 +1,11 @@
+//ini fungsi prompt nama
 function replaceName () {
     let name = prompt("siapakah nama Anda?", "");
     document.getElementById("nama").innerHTML = name
 }
 replaceName ();
 
+//ini fungsi form
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
@@ -20,6 +22,7 @@ function validateForm() {
     return false;
 }
 
+//output form
 function setSenderUi(name, birthDate, gender, messages) {
     document.getElementById("sender-full-name").innerHTML = name;
     document.getElementById("sender-birth-date").innerHTML = birthDate;
@@ -27,6 +30,7 @@ function setSenderUi(name, birthDate, gender, messages) {
     document.getElementById("sender-messages").innerHTML = messages;
 }
 
+//ini slide banner
 var indexSlide = 1;
 showDivs(indexSlide);
 
