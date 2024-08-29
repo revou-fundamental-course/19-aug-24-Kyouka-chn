@@ -1,4 +1,8 @@
 /* ini css */
+main {
+    margin-bottom: 200px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -67,19 +71,28 @@ nav {
 }
 
 .profile-item {
-    height: 100px;
+    height: 150px;
     text-align: -webkit-center;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .profile-img {
     height: 50px;
-    background-image: url(https://picsum.photos/250);
+    background-image: url(../assets/acv.png);
     background-size: cover;
     background-position: center;
     border-radius: 50px;
     width: 50px;
 }
-
+.fdt-img {
+    background-image: url(../assets/fdt.png);
+    width: 80px
+}
+.sch-img {
+    background-image: url(../assets/sch.png);
+}
+.staff-img {
+    background-image: url(../assets/staff.png);
+}
 .profile-container {
     display: flex;
     justify-content: space-around;
@@ -96,5 +109,9 @@ nav {
 .message-container {
     height: 150px;
     border: 1px solid;
-    width: 350px
+    width: 350px;
+    border-radius: 5px;
+}
+.out-msg {
+    margin-left: 10px;
 }
