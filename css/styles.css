@@ -24,6 +24,10 @@ nav {
         flex-direction: column;
     }
 
+    .banner-img {
+        border-radius: 10px;
+    }
+
     .message-style {
         flex-direction: column;
     }
@@ -35,8 +39,8 @@ nav {
 
 .logo-icon {
     background-size: cover;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     background-image: url(../assets/logo.jpg);
     border-radius: 50%;
 }
@@ -45,11 +49,22 @@ nav {
     display: flex;
 }
 
+.nav-top {
+    border: 1px solid;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 5px;
+    border-color: antiquewhite;
+    padding: 5px;
+    color: burlywood;
+    text-decoration: none;
+}
+
 .nav-item {
     border: 1px solid;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 8px;
     color: black;
     text-decoration: none;
@@ -57,6 +72,7 @@ nav {
 
 .banner-img {
     height: 350px;
+    border-radius: 5px;
     background-size: cover;
     background-position: center;
 }
